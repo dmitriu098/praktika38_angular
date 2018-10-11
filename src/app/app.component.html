@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div>
+    <mat-nav-list role="list"  *ngFor="let user of users">
+
+      <a mat-list-item  routerLink="{{user.login}}">
+        <img matListAvatar src="{{user.avatar_url}}" alt="...">
+        <p matLine>{{user.login}}</p>
+        <p matLine>{{user.id}}</p>
+      </a>
+
+    </mat-nav-list>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
